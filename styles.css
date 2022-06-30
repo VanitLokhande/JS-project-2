@@ -1,1 +1,94 @@
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.seat {
+  background-color: white;
+  height: 20px;
+  width: 18px;
+  margin: 3px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: solid;
+  border-color: black;
+}
+.row {
+  display: flex;
+}
 
+.movie-container {
+  margin: 20px 0;
+}
+.movie-container select {
+  background-color: white;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 5px 15px 5px 15px;
+}
+.seat.selected {
+  background-color: green;
+}
+.seat.occupied {
+  background-color: red;
+}
+.seat:nth-of-type(4) {
+  margin-right: 20px;
+}
+.seat:nth-of-type(8) {
+  margin-right: 20px;
+}
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.shoecase {
+  padding: 5px 10px;
+  display: flex;
+  list-style: none;
+}
+.shoecase li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.shoecase li small {
+  margin: 8px;
+}
+
+.screen {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px;
+  margin-bottom: 45px;
+}
+.container {
+  margin: 30px;
+}
+body.img {
+  opacity: 0.2;
+}
+#count {
+  font-size: 25px;
+}
+#total {
+  font-size: 25px;
+}
